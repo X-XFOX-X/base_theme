@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-<?php
-if ( is_singular() ) {
-    echo get_the_title() . ' | ' . get_bloginfo('name');
-} else {
-    bloginfo('name');
-}
-?>
-</title>
+        <?php
+        if (is_singular()) {
+            echo get_the_title() . ' | ' . get_bloginfo('name');
+        } else {
+            bloginfo('name');
+        }
+        ?>
+    </title>
+    <?php wp_head() ?>
 
 
 </head>
-<body>
-    
 
+<body>
